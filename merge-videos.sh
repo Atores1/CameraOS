@@ -1,0 +1,1 @@
+ffmpeg -i videos/A-record.mp4 -i videos/B-record.mp4 -filter_complex "[1:v][0:v]scale2ref[wm][base];[base][wm]hstack=2" videos/final.mp4
